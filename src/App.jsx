@@ -6,6 +6,7 @@ import QCModule from './components/QCModule'
 import QAModule from './components/QAModule'
 import Inventory from './components/Inventory'
 import Equipment from './components/Equipment'
+import EquipmentWorkflow from './components/EquipmentWorkflow'
 import Documents from './components/Documents'
 import Projects from './components/Projects'
 import './App.css'
@@ -19,6 +20,7 @@ const modules = [
   { id: 'qa',        label: 'QA',        icon: '⬡' },
   { id: 'inventory', label: 'Inventory', icon: '⬡' },
   { id: 'equipment', label: 'Equipment', icon: '⬡' },
+  { id: 'eqworkflow', label: 'Eq. Workflow', icon: '⬡' },
   { id: 'documents', label: 'Documents', icon: '⬡' },
 ]
 
@@ -35,6 +37,7 @@ export default function App() {
     qa:        <QAModule />,
     inventory: <Inventory />,
     equipment: <Equipment />,
+    eqworkflow: <EquipmentWorkflow />,
     documents: <Documents />,
   }
 
